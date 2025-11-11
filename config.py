@@ -82,6 +82,21 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
     Key([mod], "d", lazy.spawn("rofi -show drun"), desc="Show Rofi (drun)"),
+    Key([], "XF86AudioRaiseVolume", 
+        lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%"), 
+        desc="Volume up"),
+    Key([], "XF86AudioLowerVolume", 
+        lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%"), 
+        desc="Volume down"),
+    Key([], "XF86AudioMute", 
+        lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"), 
+        desc="Mute volume"),
+    Key([], "XF86MonBrightnessUp", 
+        lazy.spawn("brightnessctl set 5%+"), 
+        desc="Brightness up"),
+    Key([], "XF86MonBrightnessDown", 
+        lazy.spawn("brightnessctl set 5%-"), 
+        desc="Brightness down"),
 ]
 
 # Add key bindings to switch VTs in Wayland.

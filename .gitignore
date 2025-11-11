@@ -1,0 +1,24 @@
+# Archivos de bytecode de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de logs
+*.log
+
+# Archivos temporales y de respaldo del editor
+*.swp
+*~
+*.bak
+*.tmp
+
+# Configuraciones de IDEs comunes
+.vscode/
+.idea/
+.project
+.settings/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

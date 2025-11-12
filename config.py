@@ -69,7 +69,7 @@ keys = [
     ),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     # Toggle between different layouts as defined below
-    Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
+    Key([mod], "grave", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
     Key(
         [mod],
@@ -82,7 +82,7 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
     Key([mod], "d", lazy.spawn("rofi -show drun"), desc="Show Rofi (drun)"),
-    Key([mod], "grave", lazy.screen.toggle_group(), desc="Toggle to last visited group"),
+    Key([mod], "Tab", lazy.screen.toggle_group(), desc="Toggle to last visited group"),
     Key([], "XF86AudioRaiseVolume", 
         lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%"), 
         desc="Volume up"),

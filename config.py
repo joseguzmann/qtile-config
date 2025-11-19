@@ -172,6 +172,13 @@ screens = [
                 widget.GroupBox(),
                 widget.Prompt(),
                 widget.WindowName(),
+                widget.TaskList(
+                    highlight_method='block',
+                    icon_size=17,
+                    border_width=1,
+                    margin=2,
+                    max_title_width=150,
+                ),
                 widget.Chord(
                     chords_colors={
                         "launch": ("#ff0000", "#ffffff"),

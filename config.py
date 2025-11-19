@@ -171,7 +171,7 @@ screens = [
                 widget.CurrentLayout(),
                 widget.GroupBox(),
                 widget.Prompt(),
-                widget.WindowName(),
+                # widget.WindowName(),
                 widget.TaskList(
                     highlight_method='block',
                     icon_size=17,
